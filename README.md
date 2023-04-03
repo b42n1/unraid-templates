@@ -1,3 +1,3 @@
 # unraid-templates
 
-Repro containing some CA Templates for unRAID.
+Repo containing some CA Templates for unRAID.
