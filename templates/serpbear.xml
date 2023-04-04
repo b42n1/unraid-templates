@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SerpBear</Name>
+  <Repository>towfiqi/serpbear:latest</Repository>
+  <Registry>https://hub.docker.com/r/towfiqi/serpbear</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/137296-support-b42n1-repo/</Support>
+  <Project>https://github.com/towfiqi/serpbear</Project>
+  <Overview>SerpBear is an Open Source Search Engine Position Tracking App. It allows you to track your website's keyword positions in Google and get notified of their positions.&#xD;
+&#xD;
+Required: A 3rd party Scraping account or a proxy ips to scrape Google Search Result. You can get an free API key from either ScrapingAnt (10k/month free) or ScrapingRobot (5k/month free) or SpaceSerp (15k/month for one-time payment of $59).&#xD;
+&#xD;
+https://docs.serpbear.com/getting-started&#xD;
+&#xD;
+Environment Variables&#xD;
+&#xD;
+https://docs.serpbear.com/miscellaneous/environment-variables</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/b42n1/unraid-templates/main/logos/logo-serpbear.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1680586901</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Path" Target="/app/data" Default="/mnt/user/appdata/serpbear" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/serpbear</Config>
+  <Config Name="USER" Target="USER" Default="" Mode="" Description="Custom Username" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="Secure Password" Type="Variable" Display="always" Required="true" Mask="true">oztrSG4fpaiP9WV558mEe7Ry</Config>
+  <Config Name="SECRET" Target="SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">qWhcV4kw8nuXZUDkZ6B3CTotg3KbcQa9tPwDQ73thwpakLef7aS2FfSfQHrrXASYRvcn</Config>
+  <Config Name="APIKEY" Target="APIKEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">KGwQ63gmg6UnqkP24ivSx9CXVA3DFnv7BeKoYD</Config>
+  <Config Name="NEXT_PUBLIC_APP_URL" Target="NEXT_PUBLIC_APP_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:3000</Config>
+</Container>
