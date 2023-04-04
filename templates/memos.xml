@@ -7,6 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/137296-support-b42n1-repo/</Support>
   <Support/>
   <Project>https://github.com/usememos/memos</Project>
   <Overview>A lightweight, self-hosted memo hub with knowledge management and socialization.</Overview>
