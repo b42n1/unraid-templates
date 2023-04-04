@@ -17,7 +17,11 @@ https://docs.serpbear.com/getting-started&#xD;
 &#xD;
 Environment Variables&#xD;
 &#xD;
-https://docs.serpbear.com/miscellaneous/environment-variables</Overview>
+https://docs.serpbear.com/miscellaneous/environment-variables&#xD;
+&#xD;
+To add the Search Console you have to follow this guide: https://docs.serpbear.com/miscellaneous/integrate-google-search-console&#xD;
+&#xD;
+You will have to add 2 variables to the template. SEARCH_CONSOLE_PRIVATE_KEY and SEARCH_CONSOLE_CLIENT_EMAIL</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
