@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>affine</Name>
+  <Repository>ghcr.io/toeverything/affine-self-hosted:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/137296-support-b42n1-repo/</Support>
+  <Project>https://github.com/toeverything/AFFiNE</Project>
+  <Overview>AFFiNE is a next-gen knowledge base that brings planning, sorting and creating all together.&#xD;
+Privacy first, open-source, customizable and ready to use - a free replacement for Notion &amp;amp; Miro.&#xD;
+&#xD;
+Demo: https://app.affine.pro/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/b42n1/unraid-templates/main/logos/logo-affine-original.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1682685747</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3211</Config>
+  <Config Name="path" Target="/app/data" Default="/mnt/user/appdata/affine" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/affine</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>
