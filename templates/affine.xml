@@ -3,6 +3,7 @@
   <Name>affine</Name>
   <Repository>ghcr.io/toeverything/affine-self-hosted:latest</Repository>
   <Registry/>
+  <Beta>True</Beta>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -12,7 +13,9 @@
   <Overview>AFFiNE is a next-gen knowledge base that brings planning, sorting and creating all together.&#xD;
 Privacy first, open-source, customizable and ready to use - a free replacement for Notion &amp;amp; Miro.&#xD;
 &#xD;
-Demo: https://app.affine.pro/</Overview>
+Demo: https://app.affine.pro/&#xD;
+&#xD;
+**Notice:** You have to use chrome/chromium based browser. Affine has not been adapted to Safari/Firefox yet.</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
