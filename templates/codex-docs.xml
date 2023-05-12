@@ -13,7 +13,7 @@
 &#xD;
 Demo: https://docs-demo.codex.so/about-this-demo&#xD;
 &#xD;
-**Notice:** You have to create a docs-config.yaml before you install the container!&#xD;
+**Notice:** You have to create a docs-config.local.yaml before you install the container!&#xD;
 Leave empty to get the deafult config.&#xD;
 &#xD;
 Example config: https://github.com/codex-team/codex.docs/blob/main/docs-config.yaml</Overview>
