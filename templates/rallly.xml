@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Rallly</Name>
+  <Repository>lukevella/rallly:latest</Repository>
+  <Registry>https://hub.docker.com/r/lukevella/rallly</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/137296-support-b42n1-repo/</Support>
+  <Project>https://rallly.co/de</Project>
+  <Overview>Rallly is a tool for creating meeting polls. It&#x2019;s designed to help you schedule meetings with groups of people. It&#x2019;s free to use and you can create as many polls as you want.&#xD;
+&#xD;
+Authentication only works with configured SMTP settings as a code is sent to the email address.&#xD;
+If you limit access, you should also limit the allowed email addresses, otherwise anyone can register.&#xD;
+&#xD;
+Examples: https://github.com/lukevella/rallly-selfhosted&#xD;
+Reverse Proxy Configurations: https://github.com/lukevella/rallly-selfhosted/tree/main/reverse-proxy</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/b42n1/unraid-templates/main/logos/logo-rallly.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683856346</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="A connection string to your Postgres database" Type="Variable" Display="always" Required="true" Mask="false">postgres://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName</Config>
+  <Config Name="NEXT_PUBLIC_BASE_URL" Target="NEXT_PUBLIC_BASE_URL" Default="" Mode="" Description="The base url where this instance is accessible, including the scheme." Type="Variable" Display="always" Required="true" Mask="false">http://localhost:3000</Config>
+  <Config Name="SECRET_PASSWORD" Target="SECRET_PASSWORD" Default="" Mode="" Description="A random 32-character secret key used to encrypt user sessions" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="SUPPORT_EMAIL" Target="SUPPORT_EMAIL" Default="" Mode="" Description="All outgoing emails will show this email as the sender's email address, which also serves as the support email." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_HOST" Target="SMTP_HOST" Default="" Mode="" Description="The host address of your SMTP server" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="" Mode="" Description="The port of your SMTP server" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_SECURE" Target="SMTP_SECURE" Default="" Mode="" Description="Set to true if SSL is enabled for your SMTP connection" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="SMTP_USER" Target="SMTP_USER" Default="" Mode="" Description="The username (if auth is enabled on your SMTP server)" Type="Variable" Display="always" Required="false" Mask="false">smtp-username</Config>
+  <Config Name="SMTP_PWD" Target="SMTP_PWD" Default="" Mode="" Description="The password (if auth is enabled on your SMTP server)" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="AUTH_REQUIRED" Target="AUTH_REQUIRED" Default="" Mode="" Description="Set to `true` to require authentication for creating new polls and accessing admin pages" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="ALLOWED_EMAILS" Target="ALLOWED_EMAILS" Default="" Mode="" Description="Comma separated list of email addresses that are allowed to register and login. You can use wildcard syntax to match a range of email addresses. &#13;&#10;Example: john@example.com,jane@example.com" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DISABLE_LANDING_PAGE" Target="DISABLE_LANDING_PAGE" Default="" Mode="" Description="Whether or not to disable the landing page" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="SMTP_TLS_ENABLED" Target="SMTP_TLS_ENABLED" Default="" Mode="" Description="Set to true to enable TLS. Might be needed for some SMTP connections" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
