@@ -13,7 +13,7 @@
 &#xD;
 Documentation: https://answer.dev/docs/</Overview>
   <Category>Other:</Category>
-  <WebUI>http://[IP]:[PORT:9080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/b42n1/unraid-templates/main/logos/logo-answer.png</Icon>
   <ExtraParams/>
