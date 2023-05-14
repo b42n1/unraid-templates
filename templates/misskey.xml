@@ -31,6 +31,11 @@ db: host, port, user, pass&#xD;
 redis: host, port, pass&#xD;
 You have to uncomment the redis pass (remove the #).&#xD;
 &#xD;
+Create a `data` folder inside the `misskey` folder.&#xD;
+&#xD;
+Change the owner:group of the data folder with the unraid terminal.&#xD;
+chown -hR 991:991 /mnt/user/appdata/misskey/files/&#xD;
+&#xD;
 Launch the Container.</Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
