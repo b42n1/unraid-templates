@@ -17,7 +17,7 @@ https://github.com/Frooodle/Stirling-PDF/blob/main/HowToUseOCR.md&#xD;
   <Category>Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/b42n1/unraid-templates/main/logos/logo-stirling-pdf.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
