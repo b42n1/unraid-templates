@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>swing-music</Name>
+  <Repository>swingmusic</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/137296-support-b42n1-repo/</Support>
+  <Project>https://github.com/swing-opensource/swingmusic</Project>
+  <Overview>Swing is a music player for local audio files built with both visual coolness and functionality in mind. Just run the app and enjoy your music library in a web browser.&#xD;
+&#xD;
+**Before you install:**&#xD;
+cd /mnt/user/appdata&#xD;
+git clone https://github.com/swing-opensource/swingmusic.git --depth 1&#xD;
+cd swingmusic&#xD;
+docker build . -t swingmusic&#xD;
+&#xD;
+**Import Music:**&#xD;
+Settings &amp;gt; Choose Modify at Change your root directories &amp;gt; Customize root directories &amp;gt; choose / and then select the music</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:1970]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/b42n1/unraid-templates/main/logos/logo-swingmusic.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1684713355</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="port" Target="1970" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1970</Config>
+  <Config Name="path music" Target="/music" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/music/</Config>
+  <Config Name="path config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/swingmusic/</Config>
+</Container>
