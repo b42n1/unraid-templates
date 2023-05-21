@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Stirling-PDF</Name>
+  <Repository>frooodle/s-pdf</Repository>
+  <Registry>https://hub.docker.com/r/frooodle/s-pdf</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/137296-support-b42n1-repo/</Support>
+  <Project>https://github.com/Frooodle/Stirling-PDF</Project>
+  <Overview>This is a locally hosted web application that allows you to perform various operations on PDF files, such as splitting and adding images.&#xD;
+&#xD;
+Enable OCR/Compression feature:&#xD;
+https://github.com/Frooodle/Stirling-PDF/blob/main/HowToUseOCR.md&#xD;
+</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1684709779</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="path ocr" Target="/usr/share/tesseract-ocr/4.00/tessdata" Default="" Mode="rw" Description="Required for extra OCR languages" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/stirling-pdf/ocr/</Config>
+  <Config Name="config" Target="/configs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/stirling-pdf/configs/</Config>
+  <Config Name="APP_LOCALE" Target="APP_LOCALE" Default="" Mode="" Description="en_GB, ar_AR, de_DE, fr_FR, es_ES, zh_CN, ca_CA, it_IT, sv_SE, pl_PL" Type="Variable" Display="always" Required="false" Mask="false">en_GB</Config>
+  <Config Name="APP_HOME_NAME" Target="APP_HOME_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Stirling PDF</Config>
+  <Config Name="APP_HOME_DESCRIPTION" Target="APP_HOME_DESCRIPTION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Your locally hosted one-stop-shop for all your PDF needs.</Config>
+  <Config Name="APP_NAVBAR_NAME" Target="APP_NAVBAR_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Stirling PDF</Config>
+  <Config Name="APP_ROOT_PATH" Target="APP_ROOT_PATH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/</Config>
+  <Config Name="ALLOW_GOOGLE_VISIBILITY" Target="ALLOW_GOOGLE_VISIBILITY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
