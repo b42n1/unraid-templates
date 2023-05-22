@@ -18,7 +18,7 @@ cd swingmusic&#xD;
 docker build . -t swingmusic&#xD;
 &#xD;
 **Import Music:**&#xD;
-Settings &amp;gt; Choose Modify at Change your root directories &amp;gt; Customize root directories &amp;gt; choose / and then select the music</Overview>
+Settings &amp;gt; Choose Modify at Change your root directories &amp;gt; Customize root directories &amp;gt; choose / and then select the music folder</Overview>
   <Category>Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:1970]</WebUI>
   <TemplateURL/>
